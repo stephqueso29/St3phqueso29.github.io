@@ -1,29 +1,169 @@
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Webpage</title>
     <style>
-       
-         {
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-      
+        /* Body */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #fff8e1; 
+            background-color: #fff8e1; /* Soft yellow background to match the cat theme */
             color: #333;
             text-align: center;
             line-height: 1.6;
         }
 
-       
+        /* Header */
         h1 {
-            background-color: #ff9f00; 
+            background-color: #ff9f00; /* Bright orange */
             color: #fff;
             padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 2.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ff6f00; /* Darker orange */
+            background-color: #fff3e0; /* Soft orange background */
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #ff6f00;
+            margin: 10px 0;
+        }
+
+        p, ul, ol {
+            font-size: 1.1rem;
+            margin: 15px;
+            text-align: left;
+        }
+
+        /* Image Styling */
+        img {
+            width: 70%;
+            border-radius: 20px;
+            margin: 20px 0;
+            border: 5px solid #ff6f00; /* Orange border */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ffe0b2; /* Light orange background for items */
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Links */
+        a {
+            color: #ff6f00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ff9f00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff9f00;
+            color: #fff;
+            padding: 10px;
+            font-size: 0.9rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            img {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://64.media.tumblr.com/58b8febd4e5416da9dd5a245d359ab96/tumblr_o4ks5jCUKu1v0jfsto1_1280.png" alt="Cute orange cat" />
+
+    <h1>AP CompSci: My Projects</h1>
+    <p>Hello World! Welcome to my project webpage!</p>
+
+    <h2>About the Class</h2>
+    <ul>
+        <li>C++</li>
+        <li>Bits and Bytes</li>
+        <li>Variables</li>
+        <li>Arrays</li>
+        <li>Binary</li>
+        <li>Conditional Statements</li>
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+    </ul>
+
+    <h2>About the Developer (Me)</h2>
+    <p>Hi, I'm Stephany! I'm currently a senior at Mt. Eden High School. I'm excited to graduate soon and pursue my passion for neuroscience at university. I'm also a twin, and we both share a love for tech! Oh, and I have a super cute orange cat named Queso!</p>
+
+    <div>
+        <h2>My Hobbies! >_<</h2>
+        <p>Here are a few things I love to do:</p>
+        <ul>
+            <li>Hiking</li>
+            <li>Camping</li>
+            <li>Taking care of my cat</li>
+            <li>Hanging out with friends</li>
+            <li>Playing the stand-up bass</li>
+        </ul>
+
+        <h2>Projects Coming Soon!</h2>
+        <p>Stay tuned for some of my exciting projects!</p>
+
+        <h3>Contact Info</h3>
+        <p>Feel free to reach out on <a href="https://www.instagram.com/st.ephany6847?igsh=NTc4MTIwNjQ2%3D%3D" target="_blank">Instagram</a>.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Comp-Sci Webpage</p>
+    </footer>
+
+</body>
+</html>
