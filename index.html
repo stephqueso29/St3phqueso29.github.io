@@ -165,11 +165,14 @@
 </head>
 <body>
 
-    <!-- Header with Home and Contact Buttons -->
+    <!-- Header with Home, About Me, Projects, and Contact Buttons -->
     <header>
         <button onclick="document.body.scrollIntoView({behavior: 'smooth'})">Home</button>
-        <h1>AP CompSci: My Projects</h1>
-        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</button>
+        <div>
+            <button onclick="document.getElementById('about-me').scrollIntoView({behavior: 'smooth'})">About Me</button>
+            <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Projects</button>
+            <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</button>
+        </div>
     </header>
 
     <!-- Cat on Computer Image -->
