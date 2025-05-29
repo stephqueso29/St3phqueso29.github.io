@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta information for proper character encoding and mobile responsiveness -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures proper rendering in Internet Explorer -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsive -->
+  <title>Maze</title> <!-- Title of the webpage -->
+  
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+  
+  <style> 
+    /* Custom styles for the body */
+    body {
+      background-image: url(https://wallpapercave.com/wp/wp14769052.jpg); /* Background image for the page */
+      background-size: cover; /* Ensures the background image covers the entire page */
+    }
+  </style>
+
+<body>
+  <div id="page">
+    <!-- Message container shown when the maze is completed -->
+    <div id="Message-Container">
+      <div id="message">
+        <h1>Congratulations!</h1> <!-- Main heading when the maze is completed -->
+        <p>You are done.</p> <!-- Message displayed when the player finishes the maze -->
+        <p id="moves"></p> <!-- Placeholder for the number of moves taken -->
+        
+        <!-- Button to close the message container -->
+        <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Cool!" />
+      </div>
+    </div>
+
+    <br>
+    <!-- Menu for selecting difficulty and starting the maze -->
+    <div id="menu">
+      <div class="custom-select">
+        <!-- Dropdown menu to select difficulty level -->
+        <select id="diffSelect">
+          <option value="10">Easy</option>
+          <option value="15">Medium</option>
+          <option value="25">Hard</option>
+          <option value="38">Extreme</option>                                      
+        </select>
+      </div>
+      
+      <!-- Button to start the maze game -->
+      <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Start" />
+    </div>
+
+    <!-- Container for the maze -->
+    <div id="view">
+      <div id="mazeContainer">
+        <!-- Canvas where the maze will be drawn -->
+        <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+      </div>
+    </div>
+
+    <!-- Instructions for controlling the game -->
+    <p id="instructions">Use arrow keys to move the key to the house!</p>
+
+  </div>
+
+  <!-- External JavaScript libraries -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery for easier DOM manipulation -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script> <!-- jQuery TouchSwipe for touch support -->
+
+  <!-- External script for the maze logic -->
+  <script src="./script.js"></script>
+</body>
+</html>
