@@ -85,7 +85,7 @@
         }
 
         /* About Me Section */
-        #about-me, #projects, #contact {
+       #home, #about-me, #projects, #contact {
             margin-top: 50px;
             padding: 40px;
             border-radius: 15px;
@@ -201,12 +201,12 @@
 
     <!-- Header with Home, About Me, Projects, and Contact Buttons -->
     <header>
-        <button onclick="document.body.scrollIntoView({behavior: 'smooth'})">Home</button>
-        <div>
+        
+          <button onclick="document.getElementById('home').scrollIntoView({behavior: 'smooth'})">About Me</button>
             <button onclick="document.getElementById('about-me').scrollIntoView({behavior: 'smooth'})">About Me</button>
             <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Projects</button>
             <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</button>
-        </div>
+       
     </header>
 
     <!-- Cat on Computer Image with Text Overlay -->
