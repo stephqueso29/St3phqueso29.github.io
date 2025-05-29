@@ -1,0 +1,95 @@
+body {
+                margin: 0px;
+                height: 100vh;
+                background-color: #d8e2dc;
+                color: #222222;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Inter", serif;
+            }
+
+            #title {
+                font-family: "Inter", serif;
+                font-weight: 1000;
+                margin-bottom: 30px;
+                line-height: 30px;
+            }
+
+            #green-text {
+                display: block;
+                color: #222222;
+                margin: 0px;
+            }
+
+            #description {
+                margin-top: 1px;
+                margin-bottom: 35px;
+                color: #222222;
+            }
+
+            #container1 {
+                background-color: #ffcad4;
+                padding: 100px 50px;
+                width: 500px;
+                margin: 10px;
+            }
+
+            #btn1 {
+                background-color:#f4acb7;
+                color: #222222;
+                width: 130px;
+                margin-bottom: 10px;
+                padding: 7px 7px;
+                border: none;
+                border-radius: 5px;
+                font-family: "Inter", serif;
+            }
+         #btn2 {
+                background-color:#f4acb7;
+                color: #222222;
+                width: 130px;
+                margin-bottom: 10px;
+                padding: 7px 7px;
+                border: none;
+                border-radius: 5px;
+                font-family: "Inter", serif;
+            }
+         #btn3 {
+                background-color:#f4acb7;
+                color: #222222;
+                width: 130px;
+                margin-bottom: 10px;
+                padding: 7px 7px;
+                border: none;
+                border-radius: 5px;
+                font-family: "Inter", serif;
+        }
+            #btn4 {
+                background-color:#f4acb7;
+                color: #222222;
+                width: 130px;
+                margin-bottom: 1px;
+                padding: 7px 7px;
+                border: none;
+                border-radius: 5px;
+                font-family: "Inter", serif;
+           }
+            }
+
+        #text-container {
+                display: flex;
+                flex-direction: column;
+        }
+        
+        }
+         hr {
+                color: #222222;
+            }
+        .meme-display {
+          margin-top: 20px;
+          }
+
+         img {
+        max-width: 100%;
+         height: auto;
