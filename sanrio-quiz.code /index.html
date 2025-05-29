@@ -1,76 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Webpage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanrio Character Quiz</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #FFEBB7; /* Light yellow background like a cat's fur */
+      color: #4E4B3D; /* Dark brown text color for contrast */
+      padding: 20px;
+    }
+    .quiz-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #FFF4E1; /* Soft orange background */
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 15px #FFA500; /* Orange shadow for a cat-like vibe */
+    }
+    h1 {
+      text-align: center;
+      color: #FF8C00; /* Bright orange color */
+    }
+    .question {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #FF6F00; /* Dark orange for question text */
+    }
+    button {
+      background-color: #FFB74D; /* Light orange for buttons */
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 10px; 
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #FF9800; /* Bright orange on hover */
+    }
+    .result {
+      font-weight: bold;
+      color: #FF5722; /* Bold red-orange for the result text */
+      margin-top: 15px;
+    }
+    img {
+      max-width: 250px;
+      border-radius: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
 <body>
+  <div class="quiz-container">
+    <h1>Sanrio Character Quiz</h1>
+    <img src="https://images.surferseo.art/046af0ab-6e03-4ccf-916e-7f1c376627b2.png" alt="Sanrio Characters">
 
-    <!-- Header with Home, About Me, Projects, and Contact Buttons -->
-    <header>
-        <button onclick="document.getElementById('home').scrollIntoView({behavior: 'smooth'})">Home</button>
-        <button onclick="document.getElementById('about-me').scrollIntoView({behavior: 'smooth'})">About Me</button>
-        <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Projects</button>
-        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</button>
-    </header>
-
-    <!-- Cat on Computer Image with Text Overlay -->
-    <div style="position: relative;">
-        <img id="cat-image" src="https://t3.ftcdn.net/jpg/02/18/45/30/360_F_218453068_WRjhtH9MzO33Cb19K8acZI2VZvXueQ70.jpg" alt="Cat on Computer" />
-        <div id="image-text">Hello World! Welcome to my project webpage!</div>
+    <div class="question">
+      <p>1. Which Sanrio character was in the boy cried wolf?</p>
+      <input type="radio" name="q1" value="My Melody" /> My Melody<br />
+      <input type="radio" name="q1" value="Badtz-maru" /> Badtz-maru<br />
+      <input type="radio" name="q1" value="Hello Kitty" /> Hello Kitty<br />
     </div>
 
-    <!-- About Me Section -->
-    <div id="about-me">
-        <h2>About the Developer (Me)</h2>
-        <p>Hi, I'm Stephany! I'm currently a senior at Mt. Eden High School. I'm excited to graduate soon and pursue my passion for neuroscience at university. I'm also a twin, and we both share a love for tech! Oh, and I have a super cute orange cat named Queso!</p>
+    <div class="question">
+      <p>2. Which Sanrio character is black and has a blue collar?</p>
+      <input type="radio" name="q2" value="Pompompurin" /> Pompompurin<br />
+      <input type="radio" name="q2" value="Chococat" /> Chococat<br />
+      <input type="radio" name="q2" value="Keroppi" /> Keroppi<br />
     </div>
 
-    <!-- Projects Section (Sanrio Character Quiz Integrated) -->
-    <div id="projects">
-        <h2>Sanrio Character Quiz</h2>
-        <img src="https://images.surferseo.art/046af0ab-6e03-4ccf-916e-7f1c376627b2.png" alt="Sanrio Characters">
-
-        <div class="question">
-            <p>1. Which Sanrio character was in the boy cried wolf?</p>
-            <input type="radio" name="q1" value="My Melody" /> My Melody<br />
-            <input type="radio" name="q1" value="Badtz-maru" /> Badtz-maru<br />
-            <input type="radio" name="q1" value="Hello Kitty" /> Hello Kitty<br />
-        </div>
-
-        <div class="question">
-            <p>2. Which Sanrio character is black and has a blue collar?</p>
-            <input type="radio" name="q2" value="Pompompurin" /> Pompompurin<br />
-            <input type="radio" name="q2" value="Chococat" /> Chococat<br />
-            <input type="radio" name="q2" value="Keroppi" /> Keroppi<br />
-        </div>
-
-        <div class="question">
-            <p>3. Which Sanrio character is a mischievous rival of My Melody?</p>
-            <input type="radio" name="q3" value="Kuromi" /> Kuromi<br />
-            <input type="radio" name="q3" value="Chococat" /> Chococat<br />
-            <input type="radio" name="q3" value="Badtz-Maru" /> Badtz-Maru<br />
-        </div>
-
-        <button onclick="checkAnswers()">Submit Answers</button>
-        <div class="result" id="result"></div>
+    <div class="question">
+      <p>3. Which Sanrio character is a mischievous rival of My Melody?</p>
+      <input type="radio" name="q3" value="Kuromi" /> Kuromi<br />
+      <input type="radio" name="q3" value="Chococat" /> Chococat<br />
+      <input type="radio" name="q3" value="Badtz-Maru" /> Badtz-Maru<br />
     </div>
 
-    <!-- Contact Section -->
-    <div id="contact">
-        <h2>Contact Info</h2>
-        <p>Feel free to reach out on <a href="https://www.instagram.com/st.ephany6847?igsh=NTc4MTIwNjQ2%3D%3D" target="_blank">Instagram</a>.</p>
-    </div>
+    <button onclick="checkAnswers()">Submit Answers</button>
+    <div class="result" id="result"></div>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 Comp-Sci Webpage</p>
-    </footer>
+  <script> 
+    function checkAnswers() {
+      let score = 0;
+      const answers = {
+        q1: "Badtz-maru",
+        q2: "Chococat",
+        q3: "Kuromi"
+      };
 
-    <!-- External JS File -->
-    <script src="script.js"></script> <!-- Linking to the external JavaScript file -->
+      for (let q in answers) {
+        let selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === answers[q]) {
+          score++;
+        }
+      }
 
+      const result = document.getElementById("result");
+      result.innerText = `You got ${score} out of 3 correct!`;
+    }
+  </script>
 </body>
 </html>
 
+ 
+    
