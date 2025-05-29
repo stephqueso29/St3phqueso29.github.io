@@ -61,6 +61,21 @@ const sadCatMemes = [
     'https://pbs.twimg.com/media/EbKRH80WoAA5kGK.jpg',
 ]; //sad cat pictures
 
+document.getElementById('btn1').addEventListener('click', function() {
+    document.getElementById('memeImage').src = 'https://placekitten.com/500/500?image=0'; // Happy Cat
+});
+
+document.getElementById('btn2').addEventListener('click', function() {
+    document.getElementById('memeImage').src = 'https://placekitten.com/500/500?image=1'; // Sad Cat
+});
+
+document.getElementById('btn3').addEventListener('click', function() {
+    document.getElementById('memeImage').src = 'https://placekitten.com/500/500?image=2'; // Angry Cat
+});
+
+document.getElementById('btn4').addEventListener('click', function() {
+    document.getElementById('memeImage').src = 'https://placekitten.com/500/500?image=3'; // Surprised Cat
+});
 
 const memeImage = document.getElementById('memeImage');
 const happyCatBtn = document.getElementById('btn1');
