@@ -1,4 +1,4 @@
-
+<!--========================= Sanrio Quiz=========================-->
     function checkAnswers() {
       let score = 0;
       const answers = {
