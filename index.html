@@ -1,10 +1,203 @@
- <!DOCTYPE html>
+ 
+  
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Webpage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff8e1; /* Soft yellow background to match the cat theme */
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+            padding-bottom: 100px; /* Ensure space for footer */
+        }
+
+        /* Header */
+        header {
+            background-color: #ff9f00; /* Bright orange */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around; /* Distribute buttons evenly across header */
+            align-items: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            font-size: 1.5rem;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* Header Buttons */
+        header button {
+            background-color: #ff6f00;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 0 10px; /* Add some spacing between buttons */
+        }
+
+        header button:hover {
+            background-color: #ff9f00;
+            transform: scale(1.05);
+        }
+
+        /* New Heading with Buttons */
+        .btn-container {
+            margin-top: 30px;
+        }
+
+        .btn-container h2 {
+            font-size: 2rem;
+            color: #ff6f00;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .btn-container button {
+            background-color: #ff9f00;
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-container button:hover {
+            background-color: #ff6f00;
+            transform: scale(1.05);
+        }
+
+        /* About Me Section */
+        #home, #about-me, #projects, #contact {
+            margin-top: 50px;
+            padding: 40px;
+            border-radius: 15px;
+            background-color: #fff3e0; /* Soft orange background */
+            width: 80%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Content Styles */
+        p, ul, ol {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ffe0b2; /* Light orange background for items */
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        li:hover {
+            transform: translateX(10px);
+        }
+
+        /* Links */
+        a {
+            color: #ff6f00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ff9f00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff9f00;
+            color: #fff;
+            padding: 10px;
+            font-size: 0.9rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Image Styling */
+        #cat-image {
+            width: 100%;
+            height: auto;
+            position: relative;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Overlay Text Styling */
+        #image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                width: 90%;
+            }
+
+            #cat-image {
+                width: 80%;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header button {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -24,100 +217,14 @@
 
     <!-- About Me Section -->
     <div id="about-me">
-        <h2>About the Developer (Me)</h2>
-        <p>Hi, I'm Stephany! I'm currently a senior at Mt. Eden High School. I'm excited to graduate soon and pursue my passion for neuroscience at university. I'm also a twin, and we both share a love for tech! Oh, and I have a super cute orange cat named Queso!</p>
+        <h2>About Me</h2>
+        <p>Hi, I'm Stephany! I'm currently a senior at Mt. Eden High School. In this page I will display the variety of projects that were made in APCSP! Although these are probably mediocore, they are still worth looking at in my opinion. I have learned a lot from this class such as how to code in different languages such as javascript and c++. Honeslt my favorite part about coding these projects has to be the CSS, its so fun! Thank you and Good bye!</p>
     </div>
 
     <!-- Projects Section -->
     <div id="projects">
-        <!-- Sanrio Character Quiz -->
-        <h2>Sanrio Character Quiz</h2>
-        <img src="https://images.surferseo.art/046af0ab-6e03-4ccf-916e-7f1c376627b2.png" alt="Sanrio Characters">
-
-        <div class="question">
-            <p>1. Which Sanrio character was in the boy cried wolf?</p>
-            <input type="radio" name="q1" value="My Melody" /> My Melody<br />
-            <input type="radio" name="q1" value="Badtz-maru" /> Badtz-maru<br />
-            <input type="radio" name="q1" value="Hello Kitty" /> Hello Kitty<br />
-        </div>
-
-        <div class="question">
-            <p>2. Which Sanrio character is black and has a blue collar?</p>
-            <input type="radio" name="q2" value="Pompompurin" /> Pompompurin<br />
-            <input type="radio" name="q2" value="Chococat" /> Chococat<br />
-            <input type="radio" name="q2" value="Keroppi" /> Keroppi<br />
-        </div>
-
-        <div class="question">
-            <p>3. Which Sanrio character is a mischievous rival of My Melody?</p>
-            <input type="radio" name="q3" value="Kuromi" /> Kuromi<br />
-            <input type="radio" name="q3" value="Chococat" /> Chococat<br />
-            <input type="radio" name="q3" value="Badtz-Maru" /> Badtz-Maru<br />
-        </div>
-
-        <button onclick="checkAnswers()">Submit Answers</button>
-        <div class="result" id="result"></div>
-
-        <!-- Maze Game -->
-        <h2>Maze Game</h2>
-        <div id="page">
-            <!-- Message container shown when the maze is completed -->
-            <div id="Message-Container">
-                <div id="message">
-                    <h1>Congratulations!</h1> <!-- Main heading when the maze is completed -->
-                    <p>You are done.</p> <!-- Message displayed when the player finishes the maze -->
-                    <p id="moves"></p> <!-- Placeholder for the number of moves taken -->
-                    
-                    <!-- Button to close the message container -->
-                    <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Cool!" />
-                </div>
-            </div>
-
-            <br>
-            <!-- Menu for selecting difficulty and starting the maze -->
-            <div id="menu">
-                <div class="custom-select">
-                    <!-- Dropdown menu to select difficulty level -->
-                    <select id="diffSelect">
-                        <option value="10">Easy</option>
-                        <option value="15">Medium</option>
-                        <option value="25">Hard</option>
-                        <option value="38">Extreme</option>                                      
-                    </select>
-                </div>
-                
-                <!-- Button to start the maze game -->
-                <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Start" />
-            </div>
-
-            <!-- Container for the maze -->
-            <div id="view">
-                <div id="mazeContainer">
-                    <!-- Canvas where the maze will be drawn -->
-                    <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
-                </div>
-            </div>
-
-            <!-- Instructions for controlling the game -->
-            <p id="instructions">Use arrow keys to move the key to the house!</p>
-        </div>
-
-        <!-- Cat Image Generator -->
-        <h2>Cat Image Generator</h2>
-        <div id="container1">
-            <div id="text-container">
-                <h1 id="title">Generate a <span id="green-text">random cat</span></h1>
-                <p id="description">Pick the Cat That You Want!</p>
-                <button id="btn1">Happy Cat</button>
-                <button id="btn2">Sad Cat</button>
-                <button id="btn3">Angry Cat</button>
-                <button id="btn4">Surprised Cat</button>
-            </div>
-            <hr>       
-            <div class="meme-display">
-                <img id="memeImage" src="" alt="Cat Meme">
-            </div>
-        </div>
+        <h2>Projects Coming Soon!</h2>
+        <p>Stay tuned for some of my exciting projects!</p>
     </div>
 
     <!-- Contact Section -->
@@ -130,8 +237,8 @@
         <p>&copy; 2025 Comp-Sci Webpage</p>
     </footer>
 
-    <!-- External JS File -->
-    <script src="script.js"></script> <!-- Linking to the external JavaScript file -->
-
 </body>
 </html>
+
+   
+      
