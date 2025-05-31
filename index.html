@@ -21,7 +21,7 @@
     }
 
     header {
-      background-color: #ff6f00;
+      background-color: #ff6f00; 
       color: #fff;
       padding: 20px;
       display: flex;
@@ -35,7 +35,7 @@
     }
 
     header button {
-      background-color: #ff9f00;
+      background-color: #ff6f00; 
       color: white;
       border: none;
       padding: 12px 25px;
@@ -47,6 +47,34 @@
     }
 
     header button:hover {
+      background-color: #ff9f00;
+      transform: scale(1.05);
+    }
+
+    .btn-container {
+      margin-top: 30px;
+    }
+
+    .btn-container h2 {
+      font-size: 2rem;
+      color: #ff6f00;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .btn-container button {
+      background-color: #ff9f00;
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 25px;
+      margin: 0 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-container button:hover {
       background-color: #ff6f00;
       transform: scale(1.05);
     }
@@ -63,21 +91,29 @@
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     }
 
-    p, .project-desc {
+    p, ul, ol {
       font-size: 1.2rem;
       margin: 15px 30px;
       text-align: left;
       line-height: 1.8;
     }
 
-    .project-desc {
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
       background-color: #ffe0b2;
+      margin: 20px 30px;
       padding: 12px;
       border-radius: 8px;
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-      margin: 20px 30px;
+      transition: transform 0.3s ease;
     }
-
+    li:hover {
+      transform: translateX(10px);
+    }
     a {
       color: #ff6f00;
       text-decoration: none;
@@ -163,30 +199,25 @@
 
   <div id="about-me">
     <h2>About Me</h2>
-    <p>Hi, I'm Stephany! I'm a senior at Mt. Eden High School, and this page showcases my APCSP projects. I’ve learned coding in JavaScript and C++, and discovered a love for designing with CSS. Thanks for visiting!</p>
+    <p>Hi, I'm Stephany! I'm currently a senior at Mt. Eden High School. In this page I will display the variety of projects that were made in APCSP! Although these are probably mediocore, they are still worth looking at in my opinion. I have learned a lot from this class such as how to code in different languages such as javascript and c++. Honeslt my favorite part about coding these projects has to be the CSS, its so fun! Thank you and Good bye!</p>
   </div>
 
   <div id="projects">
     <h2>Projects!</h2>
 
-    <p>Explore my projects:</p>
+    <p>🔐 <a href="https://stephqueso29.github.io/Maze-Game-/" target="_blank">Random Password Generator</a></p>
+    <li>A tool that creates secure, unique passwords using symbols and letters.</li>
 
-    <div class="project-desc">
-      <a href="https://stephqueso29.github.io/Maze-Game-/" target="_blank">Random Password Generator</a> – Quickly creates strong, secure passwords.
-    </div>
+    <p>🎀 <a href="https://stephqueso29.github.io/Sanrio-Quiz/" target="_blank">Sanrio Quiz</a></p>
+    <li>Take a fun quiz to test your knowledge about Sanrio characters!</li>
 
-    <div class="project-desc">
-      <a href="https://stephqueso29.github.io/Sanrio-Quiz/" target="_blank">Sanrio Quiz</a> – Fun trivia for fans of Sanrio characters.
-    </div>
-
-    <div class="project-desc">
-      <a href="https://stephqueso29.github.io/cat-image-generator-/" target="_blank">Cat Image Generator</a> – Shows cat images that match your mood.
-    </div>
+    <p>🐱 <a href="https://stephqueso29.github.io/cat-image-generator-/" target="_blank">Cat Image Generator</a></p>
+    <li>Select your mood and view a matching cat meme — happy, sad, angry, or surprised!</li>
   </div>
 
   <div id="contact">
     <h2>Contact Info</h2>
-    <p>Reach out on <a href="https://www.instagram.com/st.ephany6847?igsh=NTc4MTIwNjQ2%3D%3D" target="_blank">Instagram</a>.</p>
+    <p>Feel free to reach out on <a href="https://www.instagram.com/st.ephany6847?igsh=NTc4MTIwNjQ2%3D%3D" target="_blank">Instagram</a>.</p>
   </div>
 
   <footer>
@@ -196,9 +227,27 @@
 </body>
 </html>
 
-     
-     
+  
+ 
+
+
+    
+
+  
+       
+    
    
+ 
+   
+   
+
+  
+ 
+
+
+  
+
+
    
 
       
